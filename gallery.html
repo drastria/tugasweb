@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Gambar</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .gallery-item {
+            width: 45%;
+            /* (Req 3) border: Style border default untuk gambar */
+            border: 3px solid #ccc;
+            /* (Req 3) margin: (Req 4) Jarak antar elemen */
+            margin: 10px;
+            padding: 5px;
+            box-sizing: border-box; /* Agar padding tidak merusak lebar */
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Galeri</a>
+        <a href="contact.html">Kontak</a>
+    </nav>
+
+    <div class="container clearfix">
+        <h1 style="text-align: center;">Galeri Gambar</h1>
+        
+        <img src="https://via.placeholder.com/400x300?text=Gambar+1" alt="Gambar 1"
+             style="
+                width: 45%;
+                /* (Req 3) float: Posisi kiri */
+                float: left;
+                /* (Req 3) border: Variasi border (dashed) */
+                border: 5px dashed red;
+                /* (Req 3) margin: (Req 4) Jarak antar elemen */
+                margin: 10px;
+             ">
+
+        <img src="https://via.placeholder.com/400x300?text=Gambar+2" alt="Gambar 2"
+             style="
+                width: 45%;
+                /* (Req 3) float: Posisi kanan */
+                float: right;
+                /* (Req 3) border: Variasi border (dotted) */
+                border: 5px dotted blue;
+                /* (Req 3) margin: (Req 4) Jarak antar elemen */
+                margin: 10px;
+             ">
+
+        <img src="https://via.placeholder.com/400x300?text=Gambar+3" alt="Gambar 3"
+             class="gallery-item" 
+             style="float: left;"> <img src="https://via.placeholder.com/400x300?text=Gambar+4" alt="Gambar 4"
+             class="gallery-item" 
+             style="float: right;"> </div>
+
+</body>
+</html>
