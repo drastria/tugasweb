@@ -1,0 +1,59 @@
+/* == External CSS (style.css) == */
+/* Mengatur tema warna, font, dan ukuran teks keseluruhan */
+
+body {
+    /* (Req 3) font-family: Font default untuk seluruh halaman */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #f4f4f4; /* Warna latar belakang netral */
+    color: #333; /* (Req 4) Warna teks kontras agar mudah dibaca */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 85%;
+    /* (Req 3) margin: Memberi jarak (auto) agar ke tengah */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Navigasi */
+nav {
+    background-color: #333;
+    padding: 15px 0;
+    /* (Req 3) text-align: Teks di tengah */
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    /* (Req 3) margin: Memberi jarak antar link */
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Judul (Headings) */
+h1, h2, h3 {
+    /* (Req 3 & 4) font-family: Font berbeda untuk heading */
+    font-family: 'Georgia', 'Times New Roman', serif;
+    color: #004a99; /* Warna biru tua untuk judul */
+}
+
+/* Membersihkan float di galeri */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
